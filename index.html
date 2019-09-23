@@ -6,18 +6,33 @@
 	<meta name="viewport" content="width=device-width", initial-scale="1.0">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/314f438fba.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script>
+		$(function() {
+			$(".headC").click(function() {
+				$(".headB").slideToggle();
+			});
+		});
+	</script>
+
 </head>
 <body>
 	<header>
 		<div class="container">
-			<a href="index.html" class="headA">LOGGER</a>
+			<div class="container-small">
+				<a href="index.html" class="headA">LOGGER</a>
+				<button type="button" class="headC">
+					<span class="fa fa-bars" title="MENU"></span>
+				</button>
+			</div>
 			<nav class="headB">
 				<ul>
 					<li><a href="index.html">トップ</a></li>
 					<li><a href="contents.html">コンテンツ</a></li>
 					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="contact".html">お問い合わせ</a></li>
+					<li><a href="contact.html">お問い合わせ</a></li>
 				</ul>
 			</nav>
 		</div>
