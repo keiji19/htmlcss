@@ -747,7 +747,7 @@ header {
 }
 
 /* 記事地一覧A */
-.listA H1 {
+.listA h1 {
 	text-align: center;
 }
 .listA .container {
