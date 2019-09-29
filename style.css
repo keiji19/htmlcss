@@ -929,3 +929,42 @@ header {
 		flex:1 1 50%;
 	}
 }
+
+/* アレンジ:ヘッダーの色 */
+.head-color {
+	background-color: #5D9AB2;
+	background-color: var(--main-color);
+	color: #fff;
+	color: var(--text-bright-color);
+}
+
+.head-color .headA {
+	background-color: transparent;
+	color: inherit;
+}
+
+.head-color .headC {
+	color: inherit;
+}
+
+.head-hero {
+	background-color:transparent;
+	color:#fff;
+	color: var(--text-bright-color);
+}
+
+.head-hero .headA {
+	background-color:transparent;
+	color:inherit;
+}
+
+.head-hero .headC {
+	color:inherit;
+	opacity:1;
+}
+
+@media (max-width: 767px) {
+	.head-hero .headB {
+		background-color: rgba(0,0,0,0.6);
+	}
+}
